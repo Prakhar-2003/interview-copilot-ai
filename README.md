@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Interview Copilot AI
 
-## Getting Started
+An AI-powered chatbot designed to simulate real interview experiences across multiple domains like Frontend, Backend, HR, System Design, AI/ML, and DevOps.
 
-First, run the development server:
+---
+
+## 🌟 Overview
+
+Interview Copilot is a purpose-built chatbot that helps users practice interview questions in a structured and domain-specific way.
+
+Instead of being a generic chatbot, it adapts its behavior based on the selected role, providing more relevant and focused responses.
+
+---
+
+## 🎯 Features
+
+- 🧠 Domain-specific interview chatbot
+- 💬 Real-time chat with AI (Groq API)
+- ⚡ Fast and responsive UI
+- 🎨 Animated tech-themed background
+- 🧾 Markdown-supported responses (code blocks, lists, formatting)
+- ⌨️ Enter-to-send message support
+- 📱 Fully responsive design
+
+---
+
+## 🧩 Tech Stack
+
+### Frontend
+- Next.js (App Router)
+- React.js
+- Tailwind CSS
+
+### AI Integration
+- Groq API (LLM-based responses)
+
+### UI & Animations
+- Framer Motion
+- Lucide React Icons
+- Custom Canvas Animations
+
+---
+
+## 📦 Dependencies Installed
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm install axios framer-motion lucide-react
+npm install @shadcn/ui
