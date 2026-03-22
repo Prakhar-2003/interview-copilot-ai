@@ -1,26 +1,46 @@
+
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ✅ BASE */
+html, body {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Mona Sans', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  font-weight: 600;
 }
+
+/* ✅ FLOATING LOGO ANIMATIONS */
+
+@keyframes move1 {
+  0% { transform: translate(10vw, 20vh); }
+  50% { transform: translate(80vw, 70vh); }
+  100% { transform: translate(10vw, 20vh); }
+}
+
+@keyframes move2 {
+  0% { transform: translate(70vw, 10vh); }
+  50% { transform: translate(20vw, 80vh); }
+  100% { transform: translate(70vw, 10vh); }
+}
+
+@keyframes move3 {
+  0% { transform: translate(30vw, 60vh); }
+  50% { transform: translate(60vw, 20vh); }
+  100% { transform: translate(30vw, 60vh); }
+}
+
+@keyframes move4 {
+  0% { transform: translate(80vw, 40vh); }
+  50% { transform: translate(10vw, 30vh); }
+  100% { transform: translate(80vw, 40vh); }
+}
+
+.animate-move1 { animation: move1 20s linear infinite; }
+.animate-move2 { animation: move2 25s linear infinite; }
+.animate-move3 { animation: move3 22s linear infinite; }
+.animate-move4 { animation: move4 28s linear infinite; }
